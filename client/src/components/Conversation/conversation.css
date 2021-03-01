@@ -1,0 +1,152 @@
+.chatRoom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 57px);
+  background-color: #1a1a1d;
+}
+
+.chatDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #f5f5f5;
+  height: 95%;
+  width: 35%;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .chatRoom {
+    height: 100%;
+  }
+  .chatDetail {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1200px) {
+  .chatDetail {
+    width: 60%;
+  }
+}
+
+.infoBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #2979ff;
+  height: 60px;
+  width: 100%;
+}
+
+.leftInnerContainer {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  color: white;
+}
+
+.rightInnerContainer {
+  display: flex;
+  flex: 0.5;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+
+.onlineIcon {
+  margin-right: 5%;
+}
+
+.form {
+  display: flex;
+}
+
+.input {
+  border: none;
+  border-radius: 0;
+  padding: 5%;
+  width: 80%;
+  font-size: 1.2em;
+  border-top: 2px solid #d3d3d3;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.sendButton {
+  color: #fff;
+  text-decoration: none;
+  background: #2979ff;
+  padding: 20px;
+  display: inline-block;
+  border: none;
+  width: 20%;
+}
+
+#root {
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.joinOuterContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+  background-color: #1a1a1d;
+}
+
+.joinInnerContainer {
+  width: 20%;
+}
+
+.joinInput {
+  border-radius: 0;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+.heading {
+  color: white;
+  font-size: 2.5em;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+}
+
+.button {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #2979ff;
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  width: 100%;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .joinOuterContainer {
+    height: 100%;
+  }
+  .joinInnerContainer {
+    width: 90%;
+  }
+}
+
+button:focus {
+  outline: 0;
+}
